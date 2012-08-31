@@ -4,30 +4,31 @@ core = 7.x
 projects[blackhole][type] = "module"
 projects[blackhole][download][type] = "git"
 projects[blackhole][download][url] = "git@github.com:xendk/blackhole.git"
+;projects[virtual_field][subdir] = contrib
+;projects[virtual_field][version] = "1.0"
 
-projects[ctools][subdir] = "contrib"
-projects[ctools][version] = "1.0-rc1"
-projects[ctools][patch][] = "http://drupal.org/files/issues/user_edit_form-p0-format-1184168.patch"
+projects[ctools][subdir] = contrib
+projects[ctools][version] = "1.1"
 
 projects[i18n][subdir] = contrib
-projects[i18n][version] = 1.3
+projects[i18n][version] = "1.7"
 
-projects[panels][subdir] = "contrib"
-projects[panels][version] = "3.0-alpha3"
+projects[panels][subdir] = contrib
+projects[panels][version] = "3.2"
 
 projects[features][subdir] = contrib
-projects[features][version] = 1.0-beta4
+projects[features][version] = "1.0"
 
 projects[strongarm][subdir] = contrib
-projects[strongarm][version] = 2.0-beta4
+projects[strongarm][version] = "2.0"
 
-projects[variable][subdir] = "contrib"
-projects[variable][version] = "1.1"
+projects[variable][subdir] = contrib
+projects[variable][version] = "2.1"
 
-projects[relation][subdir] = "contrib"
-projects[relation][version] = "1.0-beta1"
+projects[relation][subdir] = contrib
+projects[relation][version] = "1.0-rc3"
 
-projects[field_group][subdir] = "contrib"
+projects[field_group][subdir] = contrib
 projects[field_group][version] = "1.1"
 
 ; Ding! modules
