@@ -1,9 +1,8 @@
 api = 2
 core = 7.x
 
-projects[blackhole][type] = "module"
-projects[blackhole][download][type] = "git"
-projects[blackhole][download][url] = "git@github.com:xendk/blackhole.git"
+projects[blackhole][subdir] = contrib
+projects[blackhole][version] = "1.1"
 ;projects[virtual_field][subdir] = contrib
 ;projects[virtual_field][version] = "1.0"
 
