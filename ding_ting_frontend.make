@@ -3,8 +3,6 @@ core = 7.x
 
 projects[blackhole][subdir] = contrib
 projects[blackhole][version] = "1.1"
-;projects[virtual_field][subdir] = contrib
-;projects[virtual_field][version] = "1.0"
 
 projects[ctools][subdir] = contrib
 projects[ctools][version] = "1.1"
