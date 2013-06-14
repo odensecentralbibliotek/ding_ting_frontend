@@ -324,7 +324,7 @@ search/ting
   $display->content = array();
   $display->panels = array();
     $pane = new stdClass();
-    $pane->pid = 'new-15';
+    $pane->pid = 'new-10';
     $pane->panel = 'grid_12_right';
     $pane->type = 'block';
     $pane->subtype = 'ding_availability-legend';
@@ -342,10 +342,10 @@ search/ting
     $pane->extras = array();
     $pane->position = 0;
     $pane->locks = array();
-    $display->content['new-15'] = $pane;
-    $display->panels['grid_12_right'][0] = 'new-15';
+    $display->content['new-10'] = $pane;
+    $display->panels['grid_12_right'][0] = 'new-10';
     $pane = new stdClass();
-    $pane->pid = 'new-16';
+    $pane->pid = 'new-11';
     $pane->panel = 'grid_12_right';
     $pane->type = 'ting_collection';
     $pane->subtype = 'ting_collection';
@@ -364,6 +364,176 @@ search/ting
     $pane->extras = array();
     $pane->position = 1;
     $pane->locks = '';
+    $display->content['new-11'] = $pane;
+    $display->panels['grid_12_right'][1] = 'new-11';
+    $pane = new stdClass();
+    $pane->pid = 'new-12';
+    $pane->panel = 'grid_12_right';
+    $pane->type = 'campaign';
+    $pane->subtype = 'campaign';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'ding_campaign_count' => 3,
+      'ding_campaign_offset' => 0,
+      'context' => array(
+        0 => 'empty',
+        1 => 'empty',
+        2 => 'empty',
+        3 => 'empty',
+      ),
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array(
+      'method' => 'rules',
+      'settings' => array(
+        'granularity' => 'args',
+        'language' => 1,
+        'language_content' => 1,
+        'advanced' => array(),
+        'cache_key' => '516bbfd139e27',
+        'substitute' => 0,
+        'new' => TRUE,
+      ),
+    );
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 2;
+    $pane->locks = '';
+    $display->content['new-12'] = $pane;
+    $display->panels['grid_12_right'][2] = 'new-12';
+    $pane = new stdClass();
+    $pane->pid = 'new-13';
+    $pane->panel = 'grid_4_left';
+    $pane->type = 'block';
+    $pane->subtype = 'ting-ting_collection_types';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 0,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = '';
+    $display->content['new-13'] = $pane;
+    $display->panels['grid_4_left'][0] = 'new-13';
+    $pane = new stdClass();
+    $pane->pid = 'new-14';
+    $pane->panel = 'grid_4_left';
+    $pane->type = 'block';
+    $pane->subtype = 'ting-ting_object_types';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = '';
+    $display->content['new-14'] = $pane;
+    $display->panels['grid_4_left'][1] = 'new-14';
+  $display->hide_title = PANELS_TITLE_FIXED;
+  $display->title_pane = 'new-11';
+  $handler->conf['display'] = $display;
+  $export['ting_collection_panel_context'] = $handler;
+
+  $handler = new stdClass();
+  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
+  $handler->api_version = 1;
+  $handler->name = 'ting_object_panel_context';
+  $handler->task = 'ting_object';
+  $handler->subtask = '';
+  $handler->handler = 'panel_context';
+  $handler->weight = -1;
+  $handler->conf = array(
+    'title' => 'Ting Odense object',
+    'no_blocks' => 1,
+    'pipeline' => 'standard',
+    'css_id' => '',
+    'css' => '',
+    'contexts' => array(),
+    'relationships' => array(),
+    'body_classes_to_remove' => '',
+    'body_classes_to_add' => '',
+  );
+  $display = new panels_display();
+  $display->layout = 'two_4_12';
+  $display->layout_settings = array();
+  $display->panel_settings = array(
+    'style_settings' => array(
+      'default' => NULL,
+      'left' => NULL,
+      'middle' => NULL,
+      'right' => NULL,
+      'grid_12_right' => NULL,
+      'grid_4_left' => NULL,
+    ),
+  );
+  $display->cache = array();
+  $display->title = '';
+  $display->content = array();
+  $display->panels = array();
+    $pane = new stdClass();
+    $pane->pid = 'new-15';
+    $pane->panel = 'grid_12_right';
+    $pane->type = 'ting_object';
+    $pane->subtype = 'ting_object';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => 'argument_ting_object_id_17',
+      'override_title' => 1,
+      'override_title_text' => '',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 0;
+    $pane->locks = '';
+    $display->content['new-15'] = $pane;
+    $display->panels['grid_12_right'][0] = 'new-15';
+    $pane = new stdClass();
+    $pane->pid = 'new-16';
+    $pane->panel = 'grid_12_right';
+    $pane->type = 'recommendation_list';
+    $pane->subtype = 'recommendation_list';
+    $pane->shown = TRUE;
+    $pane->access = array();
+    $pane->configuration = array(
+      'context' => array(
+        0 => 'argument_ting_object_id_17',
+        1 => 'empty',
+      ),
+      'override_title' => 1,
+      'override_title_text' => 'Andre med samme søgning lånte også:',
+    );
+    $pane->cache = array();
+    $pane->style = array(
+      'settings' => NULL,
+    );
+    $pane->css = array();
+    $pane->extras = array();
+    $pane->position = 1;
+    $pane->locks = array();
     $display->content['new-16'] = $pane;
     $display->panels['grid_12_right'][1] = 'new-16';
     $pane = new stdClass();
@@ -392,7 +562,7 @@ search/ting
         'language' => 1,
         'language_content' => 1,
         'advanced' => array(),
-        'cache_key' => '516bbfd139e27',
+        'cache_key' => '516bbfbc75bb6',
         'substitute' => 0,
         'new' => TRUE,
       ),
@@ -435,7 +605,7 @@ search/ting
     $pane->shown = TRUE;
     $pane->access = array();
     $pane->configuration = array(
-      'override_title' => 1,
+      'override_title' => 0,
       'override_title_text' => '',
     );
     $pane->cache = array();
@@ -448,178 +618,8 @@ search/ting
     $pane->locks = '';
     $display->content['new-19'] = $pane;
     $display->panels['grid_4_left'][1] = 'new-19';
-  $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-16';
-  $handler->conf['display'] = $display;
-  $export['ting_collection_panel_context'] = $handler;
-
-  $handler = new stdClass();
-  $handler->disabled = FALSE; /* Edit this to true to make a default handler disabled initially */
-  $handler->api_version = 1;
-  $handler->name = 'ting_object_panel_context';
-  $handler->task = 'ting_object';
-  $handler->subtask = '';
-  $handler->handler = 'panel_context';
-  $handler->weight = -1;
-  $handler->conf = array(
-    'title' => 'Ting Odense object',
-    'no_blocks' => 1,
-    'pipeline' => 'standard',
-    'css_id' => '',
-    'css' => '',
-    'contexts' => array(),
-    'relationships' => array(),
-    'body_classes_to_remove' => '',
-    'body_classes_to_add' => '',
-  );
-  $display = new panels_display();
-  $display->layout = 'two_4_12';
-  $display->layout_settings = array();
-  $display->panel_settings = array(
-    'style_settings' => array(
-      'default' => NULL,
-      'left' => NULL,
-      'middle' => NULL,
-      'right' => NULL,
-      'grid_12_right' => NULL,
-      'grid_4_left' => NULL,
-    ),
-  );
-  $display->cache = array();
-  $display->title = '';
-  $display->content = array();
-  $display->panels = array();
     $pane = new stdClass();
     $pane->pid = 'new-20';
-    $pane->panel = 'grid_12_right';
-    $pane->type = 'ting_object';
-    $pane->subtype = 'ting_object';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'context' => 'argument_ting_object_id_17',
-      'override_title' => 1,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = '';
-    $display->content['new-20'] = $pane;
-    $display->panels['grid_12_right'][0] = 'new-20';
-    $pane = new stdClass();
-    $pane->pid = 'new-21';
-    $pane->panel = 'grid_12_right';
-    $pane->type = 'recommendation_list';
-    $pane->subtype = 'recommendation_list';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'context' => array(
-        0 => 'argument_ting_object_id_17',
-        1 => 'empty',
-      ),
-      'override_title' => 1,
-      'override_title_text' => 'Andre med samme søgning lånte også:',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = array();
-    $display->content['new-21'] = $pane;
-    $display->panels['grid_12_right'][1] = 'new-21';
-    $pane = new stdClass();
-    $pane->pid = 'new-22';
-    $pane->panel = 'grid_12_right';
-    $pane->type = 'campaign';
-    $pane->subtype = 'campaign';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'ding_campaign_count' => 3,
-      'ding_campaign_offset' => 0,
-      'context' => array(
-        0 => 'empty',
-        1 => 'empty',
-        2 => 'empty',
-        3 => 'empty',
-      ),
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array(
-      'method' => 'rules',
-      'settings' => array(
-        'granularity' => 'args',
-        'language' => 1,
-        'language_content' => 1,
-        'advanced' => array(),
-        'cache_key' => '516bbfbc75bb6',
-        'substitute' => 0,
-        'new' => TRUE,
-      ),
-    );
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 2;
-    $pane->locks = '';
-    $display->content['new-22'] = $pane;
-    $display->panels['grid_12_right'][2] = 'new-22';
-    $pane = new stdClass();
-    $pane->pid = 'new-23';
-    $pane->panel = 'grid_4_left';
-    $pane->type = 'block';
-    $pane->subtype = 'ting-ting_collection_types';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 0;
-    $pane->locks = '';
-    $display->content['new-23'] = $pane;
-    $display->panels['grid_4_left'][0] = 'new-23';
-    $pane = new stdClass();
-    $pane->pid = 'new-24';
-    $pane->panel = 'grid_4_left';
-    $pane->type = 'block';
-    $pane->subtype = 'ting-ting_object_types';
-    $pane->shown = TRUE;
-    $pane->access = array();
-    $pane->configuration = array(
-      'override_title' => 0,
-      'override_title_text' => '',
-    );
-    $pane->cache = array();
-    $pane->style = array(
-      'settings' => NULL,
-    );
-    $pane->css = array();
-    $pane->extras = array();
-    $pane->position = 1;
-    $pane->locks = '';
-    $display->content['new-24'] = $pane;
-    $display->panels['grid_4_left'][1] = 'new-24';
-    $pane = new stdClass();
-    $pane->pid = 'new-25';
     $pane->panel = 'grid_4_left';
     $pane->type = 'block';
     $pane->subtype = 'ting-ting_relation_anchors';
@@ -637,10 +637,10 @@ search/ting
     $pane->extras = array();
     $pane->position = 2;
     $pane->locks = '';
-    $display->content['new-25'] = $pane;
-    $display->panels['grid_4_left'][2] = 'new-25';
+    $display->content['new-20'] = $pane;
+    $display->panels['grid_4_left'][2] = 'new-20';
   $display->hide_title = PANELS_TITLE_FIXED;
-  $display->title_pane = 'new-20';
+  $display->title_pane = 'new-15';
   $handler->conf['display'] = $display;
   $export['ting_object_panel_context'] = $handler;
 
