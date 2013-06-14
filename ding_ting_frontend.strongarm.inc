@@ -16,8 +16,8 @@ function ding_ting_frontend_strongarm() {
   $strongarm->name = 'ding_facetbrowser_facets';
   $strongarm->value = array(
     0 => array(
-      'name' => 'facet.subject',
-      'title' => 'Emne',
+      'name' => 'facet.type',
+      'title' => 'Materialetype',
       'weight' => '-10',
     ),
     1 => array(
@@ -26,29 +26,34 @@ function ding_ting_frontend_strongarm() {
       'weight' => '-9',
     ),
     2 => array(
-      'name' => 'facet.type',
-      'title' => 'Materialetype',
+      'name' => 'facet.genreCategory',
+      'title' => 'Fag- / skønlitteratur',
       'weight' => '-8',
     ),
     3 => array(
-      'name' => 'facet.category',
-      'title' => 'Kategori',
+      'name' => 'facet.subject',
+      'title' => 'Emne',
       'weight' => '-7',
     ),
     4 => array(
-      'name' => 'facet.language',
-      'title' => 'Sprog',
+      'name' => 'facet.acSource',
+      'title' => 'Kilde',
       'weight' => '-6',
     ),
     5 => array(
       'name' => 'facet.date',
-      'title' => 'Årstal',
+      'title' => 'Udgivelsesår',
       'weight' => '-5',
     ),
     6 => array(
-      'name' => 'facet.acSource',
-      'title' => 'Kilde',
+      'name' => 'facet.language',
+      'title' => 'Sprog',
       'weight' => '-4',
+    ),
+    7 => array(
+      'name' => 'facet.department',
+      'title' => 'Målgruppe',
+      'weight' => '-3',
     ),
   );
   $export['ding_facetbrowser_facets'] = $strongarm;
