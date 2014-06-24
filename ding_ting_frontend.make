@@ -8,7 +8,7 @@ projects[ctools][subdir] = contrib
 projects[ctools][version] = "1.1"
 
 projects[i18n][subdir] = contrib
-projects[i18n][version] = "1.7"
+projects[i18n][version] = "1.11"
 
 projects[panels][subdir] = contrib
 projects[panels][version] = "3.2"
