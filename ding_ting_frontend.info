@@ -26,7 +26,6 @@ dependencies[] = ting_proxy
 dependencies[] = ting_reference
 dependencies[] = ting_relation
 dependencies[] = ting_search
-dependencies[] = ting_search_autocomplete
 features[ctools][] = page_manager:pages_default:1
 features[ctools][] = strongarm:strongarm:1
 features[features_api][] = api:1
